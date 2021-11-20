@@ -1,0 +1,102 @@
+/*Página geral*/
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--preto);
+  font-family: sans-serif;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 35px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*Título em destaque*/
+.principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('../img/Senna.jpeg');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.titulo {
+  font-size: 40px;
+}
+
+.principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 500px;
+  text-align: justify;
+}
+
+.principal .container {
+  margin-left: 30px;
+  width: 80%;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 10px;
+  padding: 15px 30px;
+  margin-right: 15px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.botao:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.botao i {
+  margin-right: 10px;
+}
+
+.box-filme {
+  height: 400px;
+  width: 200px;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
