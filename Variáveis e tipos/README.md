@@ -46,3 +46,9 @@ Disclaimer: Quando escrevo sifrão na verdade quero dizer o simbolo $.
 Para declarar numeros em uma variável é somente não utilizar aspas.
 Existe o objeto "math" que tem diversos métodos e que podem ser encotrados na documentação do javascript.
 Para poder fazer o uso de porcentagem é necessario realizar uma string ou a concatenação de um numero com string "variavelPorcentagem = valorPorcentagem + "%"".
+
+#### Boolean
+
+Boolean é usado como um verdadeiro ou falso.
+Se declarado uma variável com comparação ela já vai ser considerada um boolean altumaticamente pelo javascript.
+Se você colocar um "!" antes da variável desejada ele vai inveter esse valor.
