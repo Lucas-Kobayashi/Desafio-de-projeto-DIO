@@ -52,3 +52,10 @@ Para poder fazer o uso de porcentagem é necessario realizar uma string ou a con
 Boolean é usado como um verdadeiro ou falso.
 Se declarado uma variável com comparação ela já vai ser considerada um boolean altumaticamente pelo javascript.
 Se você colocar um "!" antes da variável desejada ele vai inveter esse valor.
+
+### Array
+
+São listas interaveis de elementos, você consegue ver o tamanho da array assim como uma leght de um item.
+sempre que usado push o valor inserido vai para o final da array.
+Para retirar algum item do final da array pode usar o ".pop".
+O comando shift e unshift se referem ao comeco da lista, shift colocando o valor e unshift retirando.
