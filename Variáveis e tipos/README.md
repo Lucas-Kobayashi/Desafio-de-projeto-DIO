@@ -59,3 +59,26 @@ São listas interaveis de elementos, você consegue ver o tamanho da array assim
 sempre que usado push o valor inserido vai para o final da array.
 Para retirar algum item do final da array pode usar o ".pop".
 O comando shift e unshift se referem ao comeco da lista, shift colocando o valor e unshift retirando.
+
+### Objetos
+
+Conhecido como estrutura tipo "chave e valor".
+Para declarar um objeto você deve utilizar a declaração de variável e utilizar o "{}".
+Se utilizar o nome da variável e ".chave de escolha" ele exibe apenas o conteudo daquela chave, o mesmo é valido para "["chave de escolha"]".
+
+### Empty, Undefined e Null
+
+Todos são contrarios a true.
+
+#### Empty
+
+O valor empty é algo vazio, como uma variável sem ter nada declarado.
+
+#### Undefined
+
+O undefined é algo que nunca foi declarado.
+
+#### Null
+
+O null é quando você propositalmente usa um objeto, variável ou valor que não existem.
+Valores null não são verdadeiros nem falsos.
