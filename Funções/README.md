@@ -33,3 +33,17 @@ Hoje em dia é mais facil declarar um valor padrão sem precisar usar "if". Para
 ### Arguments
 
 Um array que contém todos os parametros de quando a função foi invocada.
+
+### Arrays
+
+#### Spread
+
+Nesse exemplo estamos utilizando spread, para que o parâmetro se encaixe na array inteira e não apenas no "x", nesse caso o "x, y, z" serão substituidos por "1, 2, 3".
+O spread é feito com o comando "..." inserido na função.
+É utilizado quando você chamando a função.
+
+#### Rest
+
+Nesse caso estamos agrupando os itens em um array.
+Conforme mais argumentos são incrementados maior vai ficando a array.
+É utilizado quando você declarando a função.
