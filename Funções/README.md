@@ -47,3 +47,15 @@ O spread é feito com o comando "..." inserido na função.
 Nesse caso estamos agrupando os itens em um array.
 Conforme mais argumentos são incrementados maior vai ficando a array.
 É utilizado quando você declarando a função.
+
+### If e else
+
+A primeira declaracão, a que está dentro do if ocorre caso a sua condição seja verdadeira, se não for o caso o programa prossegue para o else.
+Você consegue armazenar condicionais dentro de variáveis.
+O uso do else não é obrigatório.
+
+### Switch
+
+Equivale a uma comparação (===).
+Sempre precisa de um valor default.
+É ideal quando é necessario comparar varios valores.
