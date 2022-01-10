@@ -79,3 +79,18 @@ O "do while" força a sua execução pelo menos uma vez.
 </p>
 
 O método "this" é utilizado para se referir a algo dentro de um objeto.
+
+Funções dentro do This são:
+
+#### Call
+
+O "call" é utilizado para poder chamar a função que você deseja que o "this" se aplique.
+
+#### Apply
+
+Os argumentos do "apply" tem que ser passados dentro de um array.
+Se não dor utilizado um argumento o seu uso é muito similar ao call.
+
+#### Bind
+
+"bind" funciona clonando a estrura da função onde você utilizou ele.
