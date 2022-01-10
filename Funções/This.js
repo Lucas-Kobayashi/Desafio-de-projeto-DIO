@@ -1,5 +1,5 @@
 //Sempre que uma função está dentro de um objeto, ela deve ser chamada de método.
-//O método "this" é utilizado para se referir a algo dentro de um objeto
+//O método "this" é utilizado para se referir a algo dentro de um objeto.
 
 const pessoa = {
   firstName: "Clara",

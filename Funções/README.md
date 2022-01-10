@@ -71,3 +71,11 @@ Sempre precisa de um valor default.
 
 Executa a instrução até que a condição seja falsa.
 O "do while" força a sua execução pelo menos uma vez.
+
+#### This
+
+<p align="center">
+<img src="/assets/this.png">
+</p>
+
+O método "this" é utilizado para se referir a algo dentro de um objeto.
