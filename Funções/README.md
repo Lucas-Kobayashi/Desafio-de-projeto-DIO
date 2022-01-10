@@ -7,6 +7,7 @@
 A estrutura básica de uma função é "function nome(parametro){}" o parametro não é obrigatório.
 As variáveis criadas dentro da função só podem ser utilizadas dentro dela.
 O "return" é utilizado para terminar a função naquele local.
+Sempre que uma função está dentro de um objeto, ela deve ser chamada de método.
 
 #### Função anônima
 
