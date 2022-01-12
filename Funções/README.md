@@ -82,15 +82,22 @@ O método "this" é utilizado para se referir a algo dentro de um objeto.
 
 Funções dentro do This são:
 
-#### Call
+Call
 
 O "call" é utilizado para poder chamar a função que você deseja que o "this" se aplique.
 
-#### Apply
+Apply
 
 Os argumentos do "apply" tem que ser passados dentro de um array.
 Se não dor utilizado um argumento o seu uso é muito similar ao call.
 
-#### Bind
+Bind
 
 "bind" funciona clonando a estrura da função onde você utilizou ele.
+
+#### Arrow Functions
+
+Arrow function é utilizado para diminuir a quantidade de código que precisa ser escrito para declarar uma variável.
+Se for uma função bem pequena não é necessario nem o uso do return.
+Caso a função vá receber apenas um parâmetro não é necessario o uso de parênteses.
+Não faz hoisting.
