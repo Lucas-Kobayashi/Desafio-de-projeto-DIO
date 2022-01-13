@@ -102,6 +102,8 @@ Se for uma função bem pequena não é necessario nem o uso do return.
 Caso a função vá receber apenas um parâmetro não é necessario o uso de parênteses.
 Não faz hoisting.
 
+## Atividades
+
 ### Atividade 1: Alunos Aprovados
 
 1. Crie uma função que recebe o array `alunos` e um número que irá representar a média final;
