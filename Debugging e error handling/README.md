@@ -1,5 +1,15 @@
 ## Erros e debugging
 
+### Throw
+
+O throw apresenta um texto próprio de erro, até apresentando a string pedida, porém tratando o caso como um erro real. Ao contrario do return que apenas apresentaria a string.
+
+### Try...catch
+
+O try catch assim como o nome sugere tenta primeiro executar algo se não ele "pega" o erro.
+Ao utilizar o "e" no console log o erro aparece como um aviso no console do seu navegador.
+Podemos utilizar a propriedade finally para ser um ultimo recurso, ela vai ser executada independentemente do try ou do cath terem sido executados, e pode ser utilizada como uma verificação.
+
 ### Principais erros
 
 #### ECMAScript error
