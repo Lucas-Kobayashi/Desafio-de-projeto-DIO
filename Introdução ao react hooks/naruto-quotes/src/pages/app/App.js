@@ -9,28 +9,30 @@ const audio = new Audio(jutsoSound);
 
 export function App() {
   const isMounted = useRef(true);
-
-  const [quoteState, setQuoteState] = useState({
-    quote: "ok",
-    speaker: "speaker"
+  const [quote, setQuoteState] = useState({
+    speaker: "Loading speaker...",
+    quote: "Loading quote"
   });
 
   const onUpdate = async () => {
-    const quote = await getQuote();
+    const resQuote = await getQuote();
 
     if (isMounted.current) {
+      setQuoteState(resQuote);
       audio.play();
-      setQuoteState(quote);
     }
   };
 
   useEffect(() => {
-    isMounted.current = false;
+    onUpdate();
+    return () => {
+      isMounted.current = false;
+    };
   }, []);
 
   return (
     <Content>
-      <Quotes {...quoteState} onUpdate={onUpdate} />
+      <Quotes {...quote} onUpdate={onUpdate} />
       <NarutoImg src={narutoImg} alt="Naruto with kunai" />
     </Content>
   );
