@@ -3,8 +3,17 @@ import ForbiddenError from "../models/errors/forbidden.error.model";
 import userRepository from "../repositories/user.repository";
 import JWT from "jsonwebtoken";
 import basicAuthenticationMiddleware from "../middlewares/basic-authentication.middleware";
+import bearerAuthenticationMiddleware from "../middlewares/bearer-authentication.middleware";
 
 const authorizationRoute = Router();
+
+authorizationRoute.post(
+  "/token/validate",
+  bearerAuthenticationMiddleware,
+  (req: Request, res: Response, next: NextFunction) => {
+    res.sendStatus(200);
+  }
+);
 
 authorizationRoute.post(
   "/token",

@@ -13,9 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 
 //Configurações de rotas
 app.use(usersRoute);
-app.use(bearerAuthenticationMiddleware, statusRoute);
 app.use(authorizationRoute);
 
+app.use(bearerAuthenticationMiddleware);
+app.use(statusRoute);
 //Configuração dos handlers de erro
 app.use(errorHandler);
 
