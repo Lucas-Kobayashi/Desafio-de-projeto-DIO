@@ -1,6 +1,6 @@
 type User = {
   uuid?: string;
-  username: string;
+  usename: string;
   password?: string;
 };
 
