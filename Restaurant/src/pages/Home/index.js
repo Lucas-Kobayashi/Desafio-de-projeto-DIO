@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 import { Card, RestaurantCard, Modal, Map } from '../../components';
 
 import logo from '../../assets/logo.svg';
-import restaurante from '../../assets/restaurante-fake.png';
+import restaurante from '../../assets/sem-foto.jpeg';
 
 import { Container, Carousel, Search, Logo, Wrapper, CarouselTitle } from './styles';
 
@@ -12,6 +13,7 @@ const Home = () => {
   const [inputValue, setInputValue] = useState('');
   const [query, setQuery] = useState(null);
   const [modalOpened, setModalOpened] = useState(false);
+  const { restaurants } = useSelector((state) => state.restaurants);
 
   const settings = {
     dots: false,
@@ -45,16 +47,18 @@ const Home = () => {
           </TextField>
           <CarouselTitle>Em sua área</CarouselTitle>
           <Carousel {...settings}>
-            <Card photo={restaurante} title="texto Aqui" />
-            <Card photo={restaurante} title="texto Aqui" />
-            <Card photo={restaurante} title="texto Aqui" />
-            <Card photo={restaurante} title="texto Aqui" />
-            <Card photo={restaurante} title="texto Aqui" />
-            <Card photo={restaurante} title="texto Aqui" />
+            {restaurants.map((restaurant) => (
+              <Card
+                key={restaurant.place_id}
+                photo={restaurant.photos ? restaurant.photos[0].getUrl : restaurante}
+                title={restaurant.name}
+              />
+            ))}
           </Carousel>
-          <button onClick={() => setModalOpened(true)}>Abrir Modal</button>
         </Search>
-        <RestaurantCard />
+        {restaurants.map((restaurant) => (
+          <RestaurantCard restaurant={restaurant} />
+        ))}
       </Container>
       <Map query={query} />
       {/* <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)} /> */}

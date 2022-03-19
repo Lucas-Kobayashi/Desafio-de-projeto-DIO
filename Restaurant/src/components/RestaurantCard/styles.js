@@ -5,6 +5,8 @@ export const Restaurant = styled.div`
   justify-content: space-between;
   cursor: pointer;
   margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
   padding: 16px;
   background-color: #ffffff;
   border: 1.5px solid transparent;
