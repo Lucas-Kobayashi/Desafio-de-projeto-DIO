@@ -41,6 +41,7 @@ const Home = () => {
             <Card photo={restaurante} title="texto Aqui" />
             <Card photo={restaurante} title="texto Aqui" />
           </Carousel>
+          <button onClick={() => setModalOpened(true)}>Abrir Modal</button>
         </Search>
         <RestaurantCard />
       </Container>
