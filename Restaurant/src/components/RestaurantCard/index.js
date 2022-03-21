@@ -5,8 +5,8 @@ import restaurante from '../../assets/sem-foto.jpeg';
 
 import { Adress, Name, Restaurant, RestaurantImage, RestaurantInfo } from './styles';
 
-const RestaurantCard = ({ restaurant }) => (
-  <Restaurant>
+const RestaurantCard = ({ restaurant, onClick }) => (
+  <Restaurant onClick={onClick}>
     <RestaurantInfo>
       <Name>{restaurant.name}</Name>
       <ReactStars count={5} value={restaurant.rating} isHalf edit={false} activeColor="#e7711c" />
